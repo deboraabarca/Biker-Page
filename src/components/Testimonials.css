@@ -1,0 +1,45 @@
+.testimonials {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;   
+}
+
+.testimonials h2 {
+  font-weight: bold;
+  font-family: var(--font-family);
+}
+
+.testimonial-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stars {
+  width: 100px;
+}
+
+.reviewer {
+  display: flex;
+  align-items: center;
+}
+.reviewer-info{
+  display: flex;
+  justify-content: space-between;
+}
+.reviewer-info img {
+  width: 80px;
+  height: 80px;
+  border-radius:50%
+}
+.reviewer-info h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.reviewer-info p {
+  margin: 0;
+  color: #777;
+}

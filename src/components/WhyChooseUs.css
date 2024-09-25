@@ -1,0 +1,28 @@
+.why-choose-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.text-section {
+  width: 50%;
+}
+.features{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.checked{
+  width: 18px;
+  margin-right: 13px;
+}
+li{
+  list-style: none;
+}
+.image-section img {
+  border-radius: 50px;
+  width: 100%; 
+  max-width: 400px;
+  height: auto;
+}
