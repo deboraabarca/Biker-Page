@@ -1,0 +1,16 @@
+.carousel-container {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px 40px; 
+    background-color: #fff; 
+}
+
+.carousel-logo {
+    width: 100px; 
+    height: auto; 
+    margin: 0 30px;
+}
