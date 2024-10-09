@@ -1,16 +1,39 @@
-.carousel-container {
+.carousel-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.logo-container {
     display: flex;
-    justify-content: space-around; 
+    justify-content: center;
     align-items: center;
-    width: 100%;
-    max-width: 1200px; 
-    margin: 0 auto; 
-    padding: 20px 40px; 
-    background-color: #fff; 
+}
+
+.logo-item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
 .carousel-logo {
-    width: 100px; 
-    height: auto; 
-    margin: 0 30px;
+    max-width: 100px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+@media (max-width: 768px) {
+    .carousel-logo {
+        max-width: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-logo {
+        max-width: 60px;
+    }
 }

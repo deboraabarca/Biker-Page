@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg';
 import MenuBar from './assets/componentH/MenuBar';
 import SliderP from './assets/componentH/slider';
 import CarruselLogo from './assets/componentH/CarruselLogos';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import './App.css';
 
 
@@ -12,11 +14,12 @@ function App() {
 
   return (
     <>
-    
     <MenuBar />
     <SliderP />
     <CarruselLogo />
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
     
     </>
   )
