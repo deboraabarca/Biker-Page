@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para el contenedor de logos */
+.logos-container {
+  text-align: center;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+
+/* Ajuste del espacio en blanco en la parte superior */
+.white-container {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  position: absolute;
+  top: 190px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+}
+
+.white-container img {
+  margin: 0 45px;
+  height: 70px;
+}
+
+/* Contenedor verde con texto */
+.green-container {
+  background-color: #38AA44;
+  padding: 60px 0 20px;
+  border-radius: 40px;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  top: 250px;
+  z-index: 1;
+}
+
+.highlight-text {
+  color: white;
+  font-size: 44px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  margin: 30px;
+  text-align: center;
+}
+
+.cta-button {
+  background-color: black;
+  color: white;
+  padding: 18px 14px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  display: block;
+  margin: 20px auto;
+}
+
+.cta-button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+/* Estilos del footer */
+.footer {
+  background-color: black;
+  color: white;
+  padding: 80px 20px; /* Reducido */
+  width: 100%;
+  margin-top: 50px;
+  position: relative;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 20px 0; /* Mantiene el espaciado entre secciones */
+}
+
+.footer-section {
+  max-width: 250px; /* Ajustado para reducir el tamaño */
+  margin-bottom: 20px; /* Menor espaciado entre las secciones */
+  position: relative;
+  margin-top: 140px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  margin-bottom: 15px; /* Ajustado el margen inferior */
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Estilos del footer inferior */
+.footer-bottom {
+  position: relative; /* Cambiado a relative para que el pseudo-elemento funcione correctamente */
+  display: flex; /* Usar flex para alinear el contenido */
+  justify-content: space-between; /* Mantiene la separación entre el texto y los enlaces */
+  align-items: center; /* Alinea verticalmente el contenido */
+  padding: 10px 20px; /* Espaciado interno */
+  margin-top: 10px; /* Espacio arriba del footer */
+  top: 70px;
+}
+
+.footer-bottom::before {
+  content: ""; /* Necesario para mostrar el pseudo-elemento */
+  display: block;
+  background-color: #ffffff; /* Color de la raya */
+  height: 1px; /* Altura de la línea */
+  width: 100%; /* Asegúrate de que ocupe todo el ancho */
+  position: absolute; /* Colocar de manera absoluta */
+  top: -5px; /* Ajusta la posición según la altura deseada */
+  left: 0; /* Asegúrate de que inicie desde el borde izquierdo */
+}
+
+.footer-bottom p {
+  margin: 0; /* Eliminar márgenes por defecto */
+  flex: 1; /* Permite que el párrafo use el espacio disponible */
+  display: flex; /* Usar flex para los enlaces */
+  justify-content: space-between; /* Espacio entre el texto y los enlaces */
+}
+
+.footer-links {
+  margin-left: auto; /* Empuja los enlaces a la derecha */
+}
+
+.footer-links a {
+  color: white;
+  margin: 0 8px; /* Espaciado entre enlaces */
+  text-decoration: none;
+  font-size: 12px; /* Tamaño de fuente más pequeño */
+}
+
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+/* Estilos para redes sociales */
+.social-media a {
+  margin-right: 10px;
+}
+
+.social-media img {
+  width: 25px;
+  height: 25px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-media img:hover {
+  transform: scale(1.1);
+}
+
+
+
+/* Media Queries - Responsividad */
+
+/* Pantallas de hasta 1200px */
+@media (max-width: 1200px) {
+  .white-container {
+    width: 70%;
+    top: 120px;
+  }
+
+  .highlight-text {
+    font-size: 36px;
+  }
+
+  .cta-button {
+    margin-right: 0;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .footer-bottom {
+    flex-direction: column; /* Cambiar a columna para pantallas más pequeñas */
+    align-items: center; /* Centra los elementos */
+    text-align: center; /* Alinea el texto al centro */
+  }
+}
+
+/* Pantallas de hasta 992px */
+@media (max-width: 992px) {
+  .white-container {
+    width: 80%;
+    top: 100px;
+  }
+
+  .highlight-text {
+    font-size: 32px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .cta-button {
+    margin-right: 0;
+    text-align: center;
+    margin: 20px auto;
+    display: block;
+  }
+
+  .footer-content {
+    flex-direction: column; /* Colocar las secciones en columna */
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 30px;
+    max-width: 100%; /* Asegurarse de que ocupe el ancho completo */
+  }
+}
+
+/* Pantallas de hasta 768px */
+@media (max-width: 768px) {
+  .white-container {
+    flex-direction: column;
+    width: 90%;
+    padding: 10px;
+  }
+
+  .white-container img {
+    margin: 10px 0;
+    height: 50px; /* Reduce the image height */
+  }
+
+  .highlight-text {
+    font-size: 28px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .cta-button {
+    margin-right: 0;
+    text-align: center;
+    margin: 20px auto;
+    display: block;
+  }
+
+  .footer {
+    padding: 80px 20px; /* Ajustar el padding para pantallas más pequeñas */
+  }
+}
+
+/* Pantallas de hasta 576px */
+@media (max-width: 576px) {
+  .white-container {
+    width: 100%;
+    top: 80px;
+  }
+
+  .highlight-text {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .cta-button {
+    margin-right: 0;
+    text-align: center;
+    margin: 20px auto;
+    display: block;
+  }
+
+  .footer {
+    padding: 60px 10px; /* Ajustar el padding para pantallas más pequeñas */
+  }
+
+  .footer-bottom {
+    flex-direction: column; /* Asegúrate de que el footer inferior esté en columna */
+    align-items: center; /* Centrar el contenido */
+  }
+
+  .footer-bottom p, .footer-links {
+    margin: 10px 0; /* Espaciado entre elementos */
+    text-align: center; /* Alinea el texto al centro */
+  }
+
+  .white-container img {
+    height: 40px; /* Reduce incluso más para pantallas pequeñas */
+  }
+}
+
