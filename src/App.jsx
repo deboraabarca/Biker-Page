@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from './kleber-comp/footer'; // Importa el Footer desde la carpeta src
+import Footer from './kleber-comp/footerSer'; // Importa el Footer desde la carpeta src
 
 function App() {
   return (
